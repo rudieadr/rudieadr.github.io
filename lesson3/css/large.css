@@ -1,0 +1,36 @@
+
+body { 
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.2rem;
+}
+h1 {
+align-content: center; 
+color: #1edc00;
+text-shadow: 2px 2px 2px #106910;
+background-color: #7c7ab0;
+}
+header {
+padding-top: 15px; 
+padding-right:0px; 
+background-color: #7c7ab0;
+-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#logo {
+align-content: center;
+}
+footer{
+align-content: center;
+padding-top: .25px; 
+color: #1edc00;
+text-shadow: 2px 2px 2px #106910;
+background-color: #7c7ab0;
+padding-bottom: .25px; 
+vertical-align: center;
+}
+a{
+color: hsla(112, 100%, 43%, 0.438);
+text-shadow: 2px 2px 2px #106910;
+background-color: #7c7ab0;  
+}
