@@ -1,8 +1,48 @@
-@media only screen and (min-width: 60em) {
-    nav a {
-    font-size: 1rem;     
-    }
-    body {
-    min-height: 300px; 
-    }
+
+body { 
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.2rem;
+text-align: center; 
+margin: 0 auto;
+width: 90%; 
+align-content: center; 
+}
+header {
+background-color: #7c7ab0;
+margin: 0 auto; 
+width: 90%;
+align-content: center; 
+}
+footer{
+align-content: center;
+padding-top: .25px; 
+color: #1edc00;
+text-shadow: 2px 2px 2px #106910;
+background-color: #7c7ab0;
+padding-bottom: .25px; 
+vertical-align: center;
+width: 90%; 
+margin: 0 auto;
+}
+a{
+margin: 0 auto;
+color: white;
+background-color: #7c7ab0;
+}
+.flex-container {
+    display: flex;
+    background-color:#7c7ab0;
+    margin-right: 2.5rem; 
+    margin-left: 2.5rem; 
+}
+.flex-container li {
+display: block; 
+flex: 1 1 100%;   
+}
+.contentbox {
+  border: 1px solid black; 
+ width: 90%; 
+ align-content: center; 
+ margin-left: 2.46rem;
+ background-color: #F0F8FF; 
 }
