@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Courier-Sans&display=swap" rel="stylesheet">
-        <meta name="author" content ="Amanda Rudie">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 4">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css" >
-        <link rel="stylesheet" href="css/medium.css" >
-        <link rel="stylesheet" href="css/large.css" >
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Courier-Sans&display=swap" rel="stylesheet">
+<meta name="author" content ="Amanda Rudie">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 4">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
 
 <script src='js/wpcustom.js'></script>
-<title>Preston Town Page</title>
+        <title>Preston Town Page</title>
 </head>
 <body>
 <header>
 <section>
-<h1><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h1>
+        <h1><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h1>
 </section>
 <section>
-<h3>www.fastweatherlookup.com</h3>
+        <h3>www.fastweatherlookup.com</h3>
 </section>
 </header>
-<main>
-
+<div id="menub">
+        <div id="hamburger-menu" onclick="toggleMenu()">
+        <div id="b1" class="hbar"></div>
+        <div id="b2" class="hbar"></div>
+        <div id="b3" class="hbar"></div>
+        </div>
+</div>
 <nav>        
         <ul class="flex-container">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="preston-4.html">Preston</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston-4.html" class="active">Preston</a></li>
         <li><a href="tba">Soda Springs</a></li>
         <li><a href="tba">Fish Haven</a></li>
         <li><a href="tba">Storm Center</a></li>
         <li><a href="tba">Gallery</a></li>
         </ul>
 </nav>
+<main>
 <h2><b>Preston Idaho</b></h2>
-<div class="contentbox">Hero w/ weather summary</div>
-<div class="contentbox forecast">5 Day Forecast</div>
-<div class="contentbox">Article</div>
-<div class="contentbox">Contact Information</div>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox">5 Day Forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
 </main>
 <footer>
 <span>&copy; FastWeatherLookup  ||  Amanda Rudie  </span><span>||  Missouri  </span>
-<span id="date"></span><span><a href="https://rudieadr.github.io">||  Home-Rudieadr  </a></span>
+  <div id="date"></div><span><a href="https://rudieadr.github.io">||  Home-Rudieadr  </a></span>
 </footer>
 </body>
 </html>
