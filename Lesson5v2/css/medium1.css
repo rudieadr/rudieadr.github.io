@@ -1,0 +1,8 @@
+@media only screen and (min-width: 60em) {
+    nav a {
+    font-size: 1rem;     
+    }
+    body {
+    min-height: 300px; 
+    }
+}
