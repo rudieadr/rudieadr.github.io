@@ -1,9 +1,15 @@
 body { 
-font family: Arial; Verdana; sans-serif; Times New Roman; 
 height: 100%;
 margin: 0;
 height: 0;
 }
+WebFont.load({
+  google: {
+    families: [
+       'Arial; Verdana; sans-serif; Times New Roman;'
+    ]
+  }
+});
 img {
 max width: 75px; 
 margin: -5px;
