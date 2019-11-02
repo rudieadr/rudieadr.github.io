@@ -1,13 +1,13 @@
 main img[data-src] {
     filter: blur(.2em);
-    height: 300px;
-    width: 400px;
+    height: 120px;
+    width: 200px;
 }
 main img {
     filter: blur(0em);
     transition: filter 0.5s;
-    height: 300px;
-    width: 400px;
+    height: 120px;
+    width: 200px;
 }
 header {
     text-align: center;
