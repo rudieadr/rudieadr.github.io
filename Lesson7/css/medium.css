@@ -1,10 +1,10 @@
 header {
-    background-color: #7c7ab0;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 5px 10px;
-}
+     background-color: #7c7ab0;
+     width: 100%;
+     justify-content: center;
+     text-align: center;
+     box-shadow: 5px 10px;
+ }
 #logo {
     justify-content: center;
     margin: 0 auto;
@@ -45,7 +45,7 @@ h3 {
 }
 #flex-container ul li:hover {
     background-color: #106910;
-    }
+}
 li {
     list-style-type: none;
     margin: 0 0 auto;
@@ -65,23 +65,23 @@ h2 {
     margin: 0 0 0 0;
 }
 body{
-font-size: 24px;
-font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-family: "PT Sans", sans-serif;
 }
 footer {
-text-align: center;
-padding-top: .25px;
-color: #1edc00;
-text-shadow: 2px 2px 2px #106910;
-background-color: #7c7ab0;
-padding-bottom: .25px;
-vertical-align: center;
-width: 100%;
+    text-align: center;
+    padding-top: .25px;
+    color: #1edc00;
+    text-shadow: 2px 2px 2px #106910;
+    background-color: #7c7ab0;
+    padding-bottom: .25px;
+    vertical-align: center;
+    width: 100%;
 }
 a{
-color: black;
-text-shadow: 2px 2px 2px #106910;
-padding: 15px;
+    color: black;
+    text-shadow: 2px 2px 2px #106910;
+    padding: 15px;
 }
 main img {
     filter: blur(0em);
@@ -97,4 +97,7 @@ main img[data-src] {
 .grid-container {
     grid-template-columns: 1fr 1fr;
     display: grid;
+}
+figure:hover {
+    box-shadow: 0 0 15px #334;
 }
