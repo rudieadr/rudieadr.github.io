@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel='shortcut icon' href='images/favicon.ico'>
+        <meta name="author" content="Amanda Rudie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 7 - lazyload">
+        <link rel="stylesheet" href="css/img.css">
+        <title>Lazy Load</title>
+
+</head>
+
+<body>
+<header>
+<h1>Lazy Load</h1>
+<main>
+        <picture>
+                <img src="img/sunset.jpg" data-src="img/sunset.jpg" caption="sunny">
+        </picture>
+        <p>Sunset</p>
+        <picture>
+                <img src="img/cloudy.jpg" data-src="img/cloudy.jpg" caption="cloudy">
+        </picture>
+        <p>Cloudy</p>
+        <picture>
+                <img src="img/snowy.jpg" data-src="img/snowy.jpg" caption="snowy">
+        </picture>
+        <p>Snowy</p>
+        <picture>
+                <img src="img/forestfire.jpg" data-src="img/forestfire.jpg" caption="forestfire">
+        </picture>
+        <p>Forest Fire</p>
+        <picture>
+                <img src="img/stormy.jpg" data-src="img/stormy.jpg" caption="stormy">
+        </picture>
+        <p>Stormy Weather</p>
+</main>
+
+
+</header>
+
+<footer>
+        <div>
+        <script src="js/load.js" defer></script>
+
+</footer>
+
+</body>
+
+</html>
