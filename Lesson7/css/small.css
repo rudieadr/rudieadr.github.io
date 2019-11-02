@@ -32,8 +32,19 @@
     .grid-container {
         grid-template-columns: 1fr;
         display: grid;
-        grid-gap: 15px;
+        grid-gap: 10px;
         justify-content: center;
         align-items: center;
+    }
+    figure {
+        width: 400px;
+        text-align: center;
+        border: grey;
+    }
+    figure:hover {
+        box-shadow: 0 0 15px #334;
+    }
+    h2 {
+        text-align: center;
     }
 }
