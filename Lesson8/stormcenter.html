@@ -63,7 +63,7 @@
 </select><br>
 <label class="frm">Storm Severity:  Pick from 1 - 10<br>
 <input type="range" min="1" max="10" value="5" oninput="showValue(this.value)" onchange="showValue(this.value)">
-<span id="severity">5</span></label><br>
+<span id="dangerlevel">5</span></label><br>
 <input list="locate" name="location">
 <datalist id="locate">
 <option value="Select Region ..." selected>
@@ -83,12 +83,28 @@
 </fieldset>
 </form>
 </div>
+    <div class="contactinfo">
+
+        <h4>Fast Weather Lookup</h4>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>        </p>
+        <p> 999.999.9999</p>
+        <p>www.fastweatherlookup.com</p>
+        <p></p>
+        <span><img src="images/fb.png" alt="Facebook"></span>
+        <span><img src="images/pinterest.png" alt="Pinterest"></span>
+        <span><img src="images/twitter.png" alt="Twitter"></span>
+        <span><img src="images/viber.png" alt="Viber"></span>
+
+    </div>
 </main>
 <footer>
 <div>
  <span>&copy; FastWeatherLookup || Amanda Rudie </span><span>|| Missouri || </span><span id="datex"> || </span><span> || <a href="https://rudieadr.github.io">Home-Rudieadr </a></span></div>
 </footer>
 <script src='js/date.js'></script>
+<script src='js/dangerlevel.js'></script>
 <script src='js/friday.js'></script>
 </body>
 </html>
