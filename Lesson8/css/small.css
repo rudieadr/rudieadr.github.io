@@ -15,5 +15,15 @@
         padding: 5px;
         line-height: 1.5em;
         background-color: lightgray;
-
+    }
+    .contactinfo{
+        text-align: center;
+        justify-content: center;
+        background-color: lightgray;
+        visibility: hidden;
+    }
+    .contactinfo span img {
+    max-height: 30px;
+    max-width: 30px;
+}
 }

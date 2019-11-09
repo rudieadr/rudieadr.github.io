@@ -54,6 +54,9 @@ ul {
 body{
     font-size: 24px;
     font-family: "PT Sans", sans-serif;
+    }
+main {
+    background-color: lightgray;
 }
 footer {
     text-align: center;
@@ -69,4 +72,8 @@ a{
     color: black;
     text-shadow: 2px 2px 2px #106910;
     padding: 15px;
+}
+.contactinfo img {
+    max-height: 30px;
+    max-width: 30px;
 }
