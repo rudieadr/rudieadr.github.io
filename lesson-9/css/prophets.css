@@ -1,0 +1,59 @@
+@media only screen and (min-width: 32.5em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 60em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+header, body, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    font-family: Ubuntu, sans-serif; font-size: 16px;
+    line-height: 1.0;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 5px; font-family: Arial;
+    font-size: 2rem;
+    color: darkblue;
+    text-align: center;
+}
+h2 {
+    color: #3F3FBF;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.cards {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 30px;
+    margin: 0 auto;
+}
+section {
+    background-color: darkgrey;
+    border: 1px solid black;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+section img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0 0 15px;
+}
