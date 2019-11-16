@@ -1,23 +1,36 @@
 @media only screen and (min-width: 32.5em) {
     .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
     }
 }
 @media only screen and (min-width: 60em) {
     .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 10px;
+     }
+    .cards p {
+        text-align: center;
     }
 }
+* {
+    box-sizing: border-box;
+}
+
 header, body, footer{
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0px;
 }
 body {
     font-family: Ubuntu, sans-serif; font-size: 16px;
     line-height: 1.0;
     box-sizing: border-box;
+    }
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+
 }
 h1 {
     margin: 5px; font-family: Arial;
@@ -34,11 +47,10 @@ h2 {
 .cards {
     background-color: grey;
     display: grid;
-    grid-template-columns: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    padding: 1rem;
-    box-shadow: 0 0 30px;
+    padding: .3rem;
+    box-shadow: 0 0 5px 0;
     margin: 0 auto;
 }
 section {
@@ -48,12 +60,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: auto;
 }
 section img {
     width: 150px;
     height: auto;
+    max-width: 100%;
     margin-top: 10px;
     box-shadow: 0 0 15px;
+}
+.cards div {
+    padding: 0 auto;
 }
