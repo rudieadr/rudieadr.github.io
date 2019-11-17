@@ -105,6 +105,8 @@
     .contactinfo {
         visibility: visible;
     }
+    .contactinfo img {
+        width: 50%;
 
     .card {
         background-color: grey;
