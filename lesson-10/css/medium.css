@@ -104,6 +104,13 @@
 
     .contactinfo {
         visibility: visible;
+        float: right;
+        width: 50%;
+    }
+    .map {
+        visibility: visible;
+        float: left;
+        width: 50%;
     }
 
     .card {
@@ -116,7 +123,20 @@
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
     }
+    #one {
 
+           padding: 5px;
+           border-radius: 15px;
+           box-shadow: 0 5px 20px 0 darkgrey;
+           box-sizing: border-box;
+       }
+    #two {
+
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px 0 darkgrey;
+        box-sizing: border-box;
+    }
     .card section {
         background-color: darkgrey;
         border: 1px solid black;
@@ -134,9 +154,38 @@
         box-shadow: 0 0 15px;
         float: right;
     }
-    .herodiv picture img {
-        max-height: 250px;
-        max-width: 250px;
+    .herodiv image {
+    position: relative;
     }
+    .article {
 
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px 0 darkgrey;
+        box-sizing: border-box;
+    }
+    .forecast-col{
+        align-content: center;
+    }
+    table {
+        margin: 0 auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+        box-shadow: 0 5px 20px 0 darkgrey;
+
+    }
+    table th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    table td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .summary {
+        top: 13rem;
+        left: 5rem;
+    }
+    .forecast-row {
+        visibility: visible;}
 }

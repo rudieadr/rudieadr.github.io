@@ -5,9 +5,10 @@ fetch( URL).then(function(response) {
 	return response.json();
 }).then(function(ojb) {
 	//console.log(ojb);
+	const jojb = ojb.list
 	let currDesc = 'Currently:  ' + ojb.list[0].weather[0].description;
 	document.getElementById('current').textContent = currDesc;
-	let currTemp = 'Temp:  ' + Math.round(ojb.list[0].main.temp, 0) + '\xB0 F';
+	let currTemp = 'Temp:  ' + Math.round(ojb.list[0].main.temp, 0) + '\xB0F';
 	document.getElementById('temp').textContent = currTemp;
 	let currHum = 'Humidity:  ' + ojb.list[0].main.humidity + '%';
 	document.getElementById('humidity').textContent = currHum;
@@ -21,33 +22,44 @@ fetch( URL).then(function(response) {
 	} else {
 		let wChill = 'Wind Chill: N/A';
 		document.getElementById('windspeed').textContent = wChill;
-	}
-});
-
-fetch( URL).then(function(response) {
-	return response.json();
-}).then(function(ojb) {
-	//console.log(ojb);
-	let list=ojb.list;
-	let number=1;
-	let weekdays = [ 'Sun','Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-	for (let i = 0; i < (list.length); i++) {
-		let value = list[i].dt_txt.split(" ");
-		if (value[1].dt_txt=='18:00:00') {
-			const date = new Date(list[i].dt_txt);
-			const days = weekdays[date.getDay()];
-			document.getElementById('wkdays' + number).textcontent = days;
-			document.getElementById('temp'+number).textContent=list[i].main.temp;
-			let wIcon='//openweathermap.org/img/wn' + list[i].weather[0].icon + '.png';
-			let wAlt='//openweathermap.org/img/wn'+ list[i].weather[0].descrption + '\xB0 F';
-			document.getElementById('icon'+number).setAttribute('src',wIcon);
-			document.getElementById('icon'+number).setAttribute('alt',wAlt);
-			number+=1;
 		}
+	function wkdays(date) {
+		const days = new Array('Sun','Mon','Tues','Wed','Thur','Fri','Sat');
+		const today = date.getDay();
+		return days[today];
 	}
-}).catch(function(error) {
-	console.error('Something is wrong with the engine, Captain!');
+	const wkdaysH = document.createElement('tr');
+	const wIcon = document.createElement('tr');
+	const wTemp = document.createElement('tr');
+	for (var i = 0; i <=jojb.length; i++) {
+		const dt_txt_field = jojb[i].dt_txt;
+		if (dt_txt_field.includes("18:00:00")) {
+			const nextDay = new Date(dt_txt_field);
+			nextDay.setDate(nextDay.getDate());
+			const nextwkdays = wkdays(nextDay);
+			const tableHeader = document.createElement('th');
+			tableHeader.textContent = nextwkdays;
+			wkdaysH.appendChild(tableHeader);
+			document.querySelector('thead.theader').appendChild(wkdaysH);
+
+			const imgsrc = 'https://openweathermap.org/img/w/' + jojb[i].weather[0].icon + '.png';
+			const desc = jojb[i].weather[0].description;
+			const imgtbldata = document.createElement('td');
+			const wimg = document.createElement('img');
+			wimg.setAttribute('src',imgsrc);
+			wimg.setAttribute('alt',desc);
+			imgtbldata.appendChild(wimg);
+			wIcon.appendChild(imgtbldata);
+			document.querySelector('thead.theader').appendChild(wIcon);
+
+			const temp = document.createElement('td');
+			temp.innerHTML = jojb[i].main.temp + "\xB0F";
+			wTemp.appendChild(temp);
+			document.querySelector('thead.theader').appendChild(wTemp);
+
+		}
+
+	}
+
 });
-
-
 
