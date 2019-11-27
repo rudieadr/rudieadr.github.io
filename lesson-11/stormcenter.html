@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="author" content="Amanda Rudie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 8 Storm Page">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <title>Storm Page</title>
+</head>
+
+<body>
+<header>
+        <section>
+                <h2><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h2>
+        </section>
+        <section>
+                <h3>www.fastweatherlookup.com</h3>
+        </section>
+</header>
+<main>
+        <div id="flex-container">
+                <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="preston-10.html">Preston</a></li>
+                        <li><a href="Home.html">Soda Springs</a></li>
+                        <li><a href="Home.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+        </div>
+
+        <p></p>
+        <h1>Storm Center</h1>
+        <form action="thankyou.php" method="post" target="_self">
+                <fieldset>
+                        <legend>Please input your information here</legend>
+                        <label class="frm">Name:  <input type="text" name="name" required pattern="[a-zA-Z ]{5,}" placeholder="Full Name Here"></label><br>
+                        <label class="frm">Email:  <input type="email" name="email" size="24" maxlength="55" placeholder="user@email.org"></label><br>
+                        <label class="frm">Phone Number:  <input type="tel" name="phonenumber" required placeholder="###-###-####"></label><br>
+                        <label class="frm">Zip Code:  <input type="number" name="zipcode" required pattern="[0-9}{5}"></label><br>
+                </fieldset>
+        </form>
+        <div>
+                <fieldset>
+                        <legend>Storm Data</legend>
+                        <label class="frm">Storm Date:  <input type="date" name="date" required pattern=\d{1,2}/\d{1,2}/\d{4}">
+                                <br>Select Weather Type:
+                                <select name="stormtype" id="weather_type">
+                                        <option value="Select Weather Type" selected>
+                                        <option value="Flash Flood">Flash Flood</option>
+                                        <option value="Hail">Hail</option>
+                                        <option value="Hurricane">Hurricane</option>
+                                        <option value="Thunderstorm">Thunderstorm</option>
+                                        <option value="Tornado">Tornado</option>
+                                </select><br>
+                                <label class="frm">Storm Severity:  Pick from 1 - 10<br>
+                                        <input type="range" min="1" max="10" value="5" oninput="showValue(this.value)" onchange="showValue(this.value)">
+                                        <span id="dangerlevel">5</span></label><br>
+                                <input list="locate" name="location">
+                                <datalist id="locate">
+                                        <option value="Select Region ..." selected>
+                                        <option value="Preston">
+                                        <option value="Soda Springs">
+                                        <option value="Fish Haven">
+                                        </option>
+                                </datalist>
+                                <legend>Danger to People?</legend>
+                                <input class="frm" type="radio" id="danger" value="yes">Yes</label><br>
+                        <input class="frm" type="radio" id="danger" value="maybe">Maybe</label><br>
+                        <input class="frm" type="radio" id="danger" value="no">No</label><br>
+                        <label class="frm">Additional Info:  </label><br>
+                        <textarea id="addinfo"></textarea><br>
+                        <input class="submit" type="submit" value="Submit">
+                        <input type="reset">
+                </fieldset>
+                </form>
+        </div>
+        <div class="contactinfo">
+                <h4>Fast Weather Lookup</h4>
+                <p>30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <p>        </p>
+                <p> 999.999.9999</p>
+                <p>www.fastweatherlookup.com</p>
+                <p></p>
+                <span><img src="images/fb.png" alt="Facebook"></span>
+                <span><img src="images/pinterest.png" alt="Pinterest"></span>
+                <span><img src="images/twitter.png" alt="Twitter"></span>
+                <span><img src="images/viber.png" alt="Viber"></span>
+        </div>
+</main>
+<footer>
+        <div>
+                <span>&copy; FastWeatherLookup || Amanda Rudie </span><span>|| Missouri || </span><span id="datex"> || </span><span> || <a href="https://rudieadr.github.io">Home-Rudieadr </a></span></div>
+</footer>
+<script src='js/date.js'></script>
+<script src='js/dangerlevel.js'></script>
+<script src='js/friday.js'></script>
+</body>
+</html>
