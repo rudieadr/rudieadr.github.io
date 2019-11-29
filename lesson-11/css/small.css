@@ -3,6 +3,10 @@
         font-size: 16px;
 
         }
+#index {
+    width: 300px;
+    height: 300px;
+}
 
     main {
         margin: 0 auto;
