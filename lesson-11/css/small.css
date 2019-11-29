@@ -164,11 +164,6 @@
         margin: 0 0 5px 0;
     }
 
-    .card{
-
-        display: flex;
-}
-
     .card section:nth-child(2){
 
         order: 1;
