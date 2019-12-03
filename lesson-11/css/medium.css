@@ -26,44 +26,7 @@
         margin: 0 0 5px 0;
     }
 
-    #flex-container {
-        display: block;
-        background-color: #7c7ab0;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        padding: 0;
-        flex-wrap: wrap;
-        width: 100%;
-    }
 
-    #flex-container ul {
-        display: inline-flex;
-        flex: 1 1 100%;
-        text-align: center;
-        width: 100%;
-        justify-content: center;
-        padding: 0 0 0 0;
-    }
-
-    #flex-container ul li {
-        display: table-row;
-        padding: 0;
-    }
-
-    #flex-container ul li:hover {
-        background-color: #106910;
-    }
-
-    li {
-        list-style-type: none;
-        margin: 0 0 auto;
-        padding: 0;
-    }
-
-    ul {
-        list-style-type: none;
-    }
 
     .herodiv {
         margin: 10px 0 0 0;
@@ -87,56 +50,38 @@
 
     footer {
         text-align: center;
-        padding-top: .25px;
-        color: #1edc00;
+
+        color: white;
         text-shadow: 2px 2px 2px #106910;
         background-color: #7c7ab0;
-        padding-bottom: .25px;
-        vertical-align: center;
+
         width: 100%;
     }
 
     a {
         color: black;
-        text-shadow: 2px 2px 2px #106910;
         padding: 15px;
     }
 
     .contactinfo {
         visibility: visible;
-        float: right;
+        text-align: right;
         width: 50%;
     }
-    .map {
-        visibility: visible;
-        float: left;
-        width: 50%;
+    #viber {
+        max-height: 64px;
     }
-
     .card {
         background-color: grey;
         display: grid;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         padding: .3rem;
-        box-shadow: 0 0 5px 0;
+
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
     }
-    #one {
 
-           padding: 5px;
-           border-radius: 15px;
-           box-shadow: 0 5px 20px 0 darkgrey;
-           box-sizing: border-box;
-       }
-    #two {
-
-        padding: 5px;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px 0 darkgrey;
-        box-sizing: border-box;
-    }
     .card section {
         background-color: darkgrey;
         border: 1px solid black;
@@ -188,4 +133,42 @@
     }
     .forecast-row {
         visibility: visible;}
+    #mainstorm {
+        text-align: left;
+    }
+    #weathergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: .3rem;
+
+        margin: 0 auto;
+    }
+    #one {
+        visibility:visible;
+        max-height: 400px;
+        line-height: 1em;
+    }
+    #two {
+        visibility:visible;
+        max-height: 400px;
+        line-height: 1em;
+        display: flex;
+    }
+    #column {
+        visibility: visible;
+        max-height: 400px;
+        flex: 50%;
+        margin: 0 auto;
+        float:left;
+        }
+    #row {
+        flex: 50%;
+        float: right;
+    }
+    #map1{
+        max-height:95%;
+    }
+
 }

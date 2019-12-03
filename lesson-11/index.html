@@ -6,12 +6,13 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel='shortcut icon' href='images/favicon.ico'>
         <meta name="author" content="Amanda Rudie">
+        <meta name="description" content="Home Page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 9">
+        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 11">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>HomePage</title>
 
@@ -20,7 +21,7 @@
 <body>
 <header>
         <section>
-                <h2><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h2>
+            <h2><a href="index.html"><img src="images/logo.png" class="logo" alt="missing logo"></a>Fast Weather Lookup</h2>
         </section>
         <section>
                 <h3>www.fastweatherlookup.com</h3>
@@ -28,70 +29,76 @@
 </header>
 
 <main>
-        <div class="navigation">
-                <div id="flex-container">
-                        <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="preston.html">Preston</a></li>
-                                <li><a href="soda.html">Soda Springs</a></li>
-                                <li><a href="fish.html">Fish Haven</a></li>
-                                <li><a href="stormcenter.html">Storm Center</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+        <div class="topnav">
+                        <ul id="navbar" class="navi">
+                            <div id="myLinks">
+                                <li><a href="index.html" id="active">Home</a></li>
+                                <li><a class="nav-item" href="preston.html">Preston</a></li>
+                                <li><a class="nav-item" href="soda.html">Soda Springs</a></li>
+                                <li><a class="nav-item" href="fish.html">Fish Haven</a></li>
+                                <li><a class="nav-item" href="stormcenter.html">Storm Center</a></li>
+                                <li><a class="nav-item" href="gallery.html">Gallery</a></li>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
                         </ul>
-                </div>
-</div>
+
+        </div>
+
         <span> </span>
         <p></p>
         <h1>Home Page</h1>
         <span> </span>
-                 <div class="herodiv">
-                 <picture>
-                         <img src="images/index.jpg" alt="image missing" id="index">
+    <span> </span>
+    <span> </span>
+    <section class="article">
+        <article>
+            <picture>
+                <img src="images/index.jpg" alt="image missing" id="index">
 
-                 </picture>
+            </picture>
+            <h3>Major Storm Promises Several Feet of Snow</h3>
+            <p>By Ze Old Cat Lady</p>
+            <p>Weather officials are warning of potentially “life threatening” situations in Montana as certain parts
+                of the state could see up 3 feet of snow as a “major fall storm” is expected to move into the region over the weekend.</p>
 
-                </div>
+            <p>Barely a week into fall, the National Weather Service issued a winter storm warning for parts of the Rocky Mountains where
+                heavy snow is expected to slam the Judith Basin and Cascade counties with total accumulations reaching up to 15 inches at
+                lower elevations and up to 30 inches in the mountains.</p>
+
+        </article>
+    </section>
 
         <div class="card">
 
         </div>
-        <section class="article">
-        <article>
-                <h3>Production Technologies bring new jobs</h3>
-                <p> By Necia Seamons</p>
-                <p>Production Technologies Inc., of Logan, Utah, is relocating to Preston, and bringing with it about 30 new jobs that are well above the median income for Franklin County,” said Calvin Sharp, owner of the company and resident of Franklin County. According to the U.S. Census Bureau, the median income level in Franklin County is $51,583.
 
-                <p>“With the help of Mayor Mark Becksead, Shawn Oliverson, Preston City Council and other folks involved, we are making this a reality. We hope to break ground before the end of the year,” said Sharp.
+    <section id="two">
+        <div id="row">
+            <img src="images/map.jpg" alt="map" id="map1">
+        </div>
+        <div id="column">
+            <h4>Fast Weather Lookup</h4>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <p>        </p>
+            <p> 999.999.9999</p>
+            <p>www.fastweatherlookup.com</p>
+            <p></p>
+            <span><img src="images/fb.png" alt="Facebook"></span>
+            <span><img src="images/pinterest.png" alt="Pinterest"></span>
+            <span><img src="images/twitter.png" alt="Twitter"></span>
+            <span><img src="images/viber.png" alt="Viber" id="viber"></span>
 
-                <p> According to Sharp, the company was considering two other locations for its expansion, but the officials in Preston City worked diligently to overcome obstacles to their move.
-
-                <p>The company was created to help solve problems for manufacturers, and helps with anything from powder coating to metal fabrication to 3D modeling/printing, composites/ molding and business solutions. Perry Holton, of Franklin, is the company’s controller and project manager.
-
-                <p>Sharp said he looks forward to finalizing paperwork so the company can begin the move. At that time, more information will be available, he said.
-        </article>
-</section>
-                <div class="contactinfo">
-
-                <h4>Fast Weather Lookup</h4>
-                <p>30 N 1st E</p>
-                <p>Preston, ID 83263</p>
-                <p>        </p>
-                <p> 999.999.9999</p>
-                <p>www.fastweatherlookup.com</p>
-                        <p></p>
-                <span><img src="images/fb.png" alt="Facebook"></span>
-                <span><img src="images/pinterest.png" alt="Pinterest"></span>
-                <span><img src="images/twitter.png" alt="Twitter"></span>
-                <span><img src="images/viber.png" alt="Viber"></span>
-
-                </div>
-        </main>
+        </div>
+    </section>
+</main>
 <footer>
         <div>
-                <span>&copy; FastWeatherLookup || Amanda Rudie </span><span>|| Missouri || </span><span id="datex"> || </span><span> || <a href="https://rudieadr.github.io">Home-Rudieadr </a></span></div>
+                <span>&copy; FastWeatherLookup || Amanda Rudie </span><span>|| Missouri || </span><span id="datex"> || </span> || <div><a href="https://rudieadr.github.io">Home-Rudieadr </a></div></div>    </section>
 </footer>
 <script src='js/date.js'></script>
-<script src='js/friday.js'></script>
 <script src='js/towninfo.js'></script>
 </body>
 

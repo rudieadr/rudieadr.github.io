@@ -31,7 +31,7 @@ fetch( URL).then(function(response) {
 	const wkdaysH = document.createElement('tr');
 	const wIcon = document.createElement('tr');
 	const wTemp = document.createElement('tr');
-	for (var i = 0; i <=jojb.length; i++) {
+	for (var i = 0; i <=jojb.length -1; i++) {
 		const dt_txt_field = jojb[i].dt_txt;
 		if (dt_txt_field.includes("18:00:00")) {
 			const nextDay = new Date(dt_txt_field);

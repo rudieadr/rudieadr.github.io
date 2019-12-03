@@ -6,21 +6,21 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel='shortcut icon' href='images/favicon.ico'>
         <meta name="author" content="Amanda Rudie">
+        <meta name="description" content="Soda Springs page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 11">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Soda Springs</title>
 
 </head>
 
 <body>
-        <span id="msg">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</span>
-<header>
+     <header>
         <section>
-                <h2><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h2>
+            <h2><a href="index.html"><img src="images/logo.png" class="logo" alt="missing logo"></a>Fast Weather Lookup</h2>
         </section>
         <section>
                 <h3>www.fastweatherlookup.com</h3>
@@ -28,25 +28,33 @@
 </header>
 
 <main>
-                <div id="flex-container">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="preston.html">Preston</a></li>
-                            <li><a href="soda.html">Soda Springs</a></li>
-                            <li><a href="fish.html">Fish Haven</a></li>
-                            <li><a href="stormcenter.html">Storm Center</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                        </ul>
-                </div>
+    <div class="topnav">
 
-    <section id="two">
+
+        <ul id="navbar" class="navi">
+            <div id="myLinks">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a class="nav-item" id="active" href="soda.html">Soda Springs</a></li>
+                <li><a class="nav-item" href="fish.html">Fish Haven</a></li>
+                <li><a class="nav-item" href="stormcenter.html">Storm Center</a></li>
+                <li><a class="nav-item" href="gallery.html">Gallery</a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+
+    </div>
+    <section id="blah">
         <h1>Soda Springs</h1>
 
 
 
                  <div class="herodiv">
                  <picture>
-                           <img src="images/soda.jpg" alt="image missing" id="soda>
+                           <img src="images/soda.jpg" alt="image missing" id="soda">
                  </picture>
                      <div class="summary">
                          <div><span><b>Current Weather</b></span></div>
@@ -85,27 +93,31 @@
                         receive the most snow in East Idaho from the storm.</p>
 
                 </article>
-                <section id="one">
-                <div class="map">
-                        <img src="images/map.jpg" alt="map" id="map1">
+    <section id="events">
+        <h3>Upcoming Preston Events</h3>
+        <div>February 29: Geyser Song Day</div>
+        <div>May 1-6: Days of May Celebration</div>
+        <div>October 15-16: Octoberfest</div>
+    </section>
+    <section id="two">
+        <div id="row">
+            <img src="images/map.jpg" alt="map" id="map1">
+        </div>
+        <div id="column">
+            <h4>Fast Weather Lookup</h4>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <p>        </p>
+            <p> 999.999.9999</p>
+            <p>www.fastweatherlookup.com</p>
+            <p></p>
+            <span><img src="images/fb.png" alt="Facebook"></span>
+            <span><img src="images/pinterest.png" alt="Pinterest"></span>
+            <span><img src="images/twitter.png" alt="Twitter"></span>
+            <span><img src="images/viber.png" alt="Viber" id="viber"></span>
 
-                </div>
-                <div class="contactinfo">
-
-                <h4>Fast Weather Lookup</h4>
-                <p>30 N 1st E</p>
-                <p>Preston, ID 83263</p>
-                <p>        </p>
-                <p> 999.999.9999</p>
-                <p>www.fastweatherlookup.com</p>
-                        <p></p>
-                <span><img src="images/fb.png" alt="Facebook"></span>
-                <span><img src="images/pinterest.png" alt="Pinterest"></span>
-                <span><img src="images/twitter.png" alt="Twitter"></span>
-                <span><img src="images/viber.png" alt="Viber"></span>
-
-                </div>
-                </section>
+        </div>
+    </section>
         </main>
 <footer>
         <div>
@@ -113,7 +125,6 @@
         <div><span>Weather Data Source: OpenWeatherMap API  - link here:  <a href="https://openweathermap.org/api">OpenWeatherMap: Weather API</a></span></div>
 </footer>
 <script src='js/date.js'></script>
-<script src='js/friday.js'></script>
 <Script src="js/sodaapi.js"></script>
 </body>
 

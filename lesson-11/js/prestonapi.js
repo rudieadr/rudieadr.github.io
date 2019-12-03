@@ -5,7 +5,7 @@ fetch( URL).then(function(response) {
 	return response.json();
 }).then(function(ojb) {
 	//console.log(ojb);
-	const jojb = ojb.list
+	const jojb = ojb.list;
 	let currDesc = 'Currently:  ' + ojb.list[0].weather[0].description;
 	document.getElementById('current').textContent = currDesc;
 	let currTemp = 'Temp:  ' + Math.round(ojb.list[0].main.temp, 0) + '\xB0F';
@@ -31,8 +31,8 @@ fetch( URL).then(function(response) {
 	const wkdaysH = document.createElement('tr');
 	const wIcon = document.createElement('tr');
 	const wTemp = document.createElement('tr');
-	for (var i = 0; i <=jojb.length; i++) {
-		const dt_txt_field = jojb[i].dt_txt;
+	for (var i = 0; i <=jojb.length - 1 ; i++) {
+		const dt_txt_field = ojb.list[i].dt_txt;
 		if (dt_txt_field.includes("18:00:00")) {
 			const nextDay = new Date(dt_txt_field);
 			nextDay.setDate(nextDay.getDate());
