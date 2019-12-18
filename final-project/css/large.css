@@ -1,0 +1,133 @@
+body {
+    background-color: #F8F8F8;
+    font-family: 'Lato', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+
+#flex-box {
+    display: flex;
+    flex-direction: column;
+}
+#headitem {
+    margin-top: 20px;
+    margin-left: 0px; right: 0px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #AFB9c8;
+}
+#templepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    top: -70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mainnav {
+    display: flex;
+    background: #AFB9c8;
+    color: white;
+    right: 12.5%;
+    float: right;
+    position: relative;
+    }
+.mainnav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 3;
+
+}
+.mainnav li {
+    margin-right: 1em;
+}
+.mainnav a {
+    color: black;
+    }
+.mainnav a:link {
+    text-decoration: none;
+}
+.mainnav a:active {
+    text-decoration: underline;
+    }
+.mainnav a:hover {
+    background-color: white;
+}
+.mainnav form {
+    display: flex;
+    justify-content:flex-end;
+    flex:1;
+}
+.mainnav input {
+    flex: 1;
+}
+#icon {
+    max-height: 1.5em;
+    }
+#hero {
+    display: block;
+    float: right;
+}
+#mtemple {
+    background-color: white;
+    -webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0.1);
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0.1);
+    padding: 0.5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+footer {
+    min-height: 50px;
+    width: 75%;
+    background-color:#47525e;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: end;
+}
+#two {
+    visibility:visible;
+    max-height: 400px;
+    line-height: 1em;
+    display: flex;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column {
+    visibility: visible;
+    max-height: 400px;
+    flex: 50%;
+    margin: 0 auto;
+    float:right;
+}
+.row {
+    flex: 50%;
+}
+#rflex-box {
+    padding: 0px;
+    margin-left: 25px;
+}
+.rcolumn {
+    visibility: visible;
+    margin: 0 auto;
+    float: left;
+}
+.rrow {
+    flex: 100%;
+    text-align: left;
+    padding: 5px;
+    margin-right: 5px;
+}
+#state {
+    margin-right: 15px;
+}
