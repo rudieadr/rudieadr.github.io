@@ -9,28 +9,29 @@
     <link rel="stylesheet" href="css/large.css" type="text/css">
     <link rel="stylesheet" href="css/medium.css" type="text/css">
     <link rel="stylesheet" href="css/small.css" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Reservations</title>
 </head>
 <body>
 <header id="headitem">
-    <nav class="mainnav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="temple.html">Temples</a></li>
-            <li><a href="reservation.html">Reservations</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </nav><br>
-    <h1><i>Temple Inn & Suites</i></h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="temple.html">Temples</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    <h1><i>Reservation</i></h1>
 </header>
 <main>
     <p></p>
 
     <h1>Guest Information</h1>
     <div id="rflex-box">
-     <form action="thankyou.php" method="post" target="_self">
+     <form>
         <fieldset>
             <legend>Please input your information here</legend>
             <div class="rrow">
@@ -134,37 +135,30 @@
                 <label class="frm">Arrival Date:  <br><input type="date" name="adate"></label><br>
                 <label class="frm">Departure Date:  <br><input type="date" name=ddate"></label><br>
                 <label class="frm">Room Options:  <br></label>
-                <select>
+                <label><select>
                     <optgroup label="Short Term Stay">
                     <option value="Single">Single</option>
                     <option value="Queen">Queen</option>
-                    <option value="Double Queen">Double Queen</option>
-                        <option value="Handicapped Queen Double">Handicapped Queen Double</option>
-                        <option value="King">King</option>
-                        <option value="King Suite">King Suite</option>
-                        <option value="Handicapped King Suite">Handicapped King Suite</option>
+                    <option value="Double Double">Double Double</option>
+                    <option value="King">King</option>
                     </optgroup>
                     <optgroup label="Long Term Stay">
-                        <option value="Single Suite With Kitchenette">Single Suite With Kitchenette</option>
-                        <option value="Queen Suite">Queen Suite</option>
-                        <option value="Queen Suite With Kitchenette">Queen Suite With Kitchenette</option>
-                        <option value="Handicapped Queen Double">Handicapped Queen Double</option>
-                        <option value="King Suite">King Suite</option>
-                        <option value="King Suite With Kitchenette">King Suite With Kitchenette</option>
-                        <option value="Handicapped King Suite">Handicapped King Suite</option>
+                        <option value="One-Bedroom Suite">One-Bedroom Suite: 2-4 adults</option>
+                        <option value="Two-Bedroom Suite">Two-Bedroom Suite: 4-8 adults</option>
                     </optgroup>
-
-                </select><br>
-                <label class="frm">Number of Guests:  <br><input type="number" name="nguests" min="1" max="10""></label><br>
+                </select></label><br>
+                <label class="frm">Number of Guests:  <br><input type="number" name="nguests" min="1" max="10"></label><br>
                 <label>Do you need any of the below extras?<br><input type="checkbox" id="bbed" value="Portable Crib">Portable Crib</label><br>
                 <label><input type="checkbox" id="rbed" value="Rollaway Bed">Rollaway Bed</label><br>
-                <button type="submit">Checkout</button>
+                <label><textarea id="txt" name="comment">Any special accomodations/request?</textarea><br></label>
+                <button type="submit">Checkout</button></div></div>
         </fieldset>
 
     </form>
         </div>
 </main>
 <footer>
+    <span>&copy; 2019 Amanda Rudie</span>
  </footer>
 
 </body>
