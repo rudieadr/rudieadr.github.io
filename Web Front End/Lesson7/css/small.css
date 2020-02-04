@@ -1,0 +1,50 @@
+@media only screen and (min-width: 37.5em) {
+    nav a {
+        font-size: .75rem;
+    }
+
+    body {
+        min-height: 250px;
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 95%;
+        padding: 5px;
+        line-height: 1.5em;
+        display: flex;
+        flex-flow: column;
+        background-color: lightgray;
+    }
+    main img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+        height: 300px;
+        width: 400px;
+    }
+    main img[data-src] {
+        filter: blur(.2em);
+        height: 300px;
+        width: 400px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    figure {
+        width: 400px;
+        text-align: center;
+        border: grey;
+    }
+    figure:hover {
+        box-shadow: 0 0 15px #334;
+    }
+    h2 {
+        text-align: center;
+    }
+}

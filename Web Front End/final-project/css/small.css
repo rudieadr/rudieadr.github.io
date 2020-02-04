@@ -1,0 +1,292 @@
+@media only screen and (max-width: 32.4em) {
+    #flex-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        background-color: #F8F8F8;
+        font-family: 'Lato', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #rflex-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset {
+        max-width: 75%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #headitem {
+        margin-top: 20px;
+        margin-left: 0px;
+        right: 0px;
+        width: 100%;
+        min-height: 100px;
+        background-color: #AFB9c8;
+    }
+
+    #templepic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    #icon {
+        max-height: 1.5em;
+    }
+
+    #hero {
+        display: block;
+        float: right;
+    }
+
+    #mtemple {
+        background-color: white;
+        padding: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        min-height: 50px;
+        background-color: #47525e;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    #two {
+        visibility: visible;
+        max-height: 400px;
+        line-height: 1em;
+        display: flex;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column {
+        visibility: visible;
+        max-height: 400px;
+        flex: 50%;
+        margin: 0 auto;
+        float: right;
+    }
+
+    .row {
+        flex: 50%;
+    }
+
+    #rflex-box {
+        padding: 0px;
+        margin-left: 25px;
+    }
+
+    .rcolumn {
+        visibility: visible;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .rrow {
+        flex: 100%;
+        text-align: left;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    #state {
+        margin-right: 15px;
+    }
+
+    #longtermone {
+        max-width: 75%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #longtermtwo {
+        max-width: 75%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #reception {
+        max-width: 75%;
+        display: block;
+        max-height: 600px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reservationinfo {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    #fbicon, #twicon, #piicon {
+        max-height: 20px;
+        padding: 5px;
+    }
+
+    #mainnav #topnav {
+        position: absolute;
+        border: none;
+        background: rgba(209, 213, 216, 0.15);
+        font-weight: bold;
+    }
+
+    #mainnav {
+        margin-top: -1em;
+        z-index: 15;
+        background-color: #FFF;
+    }
+
+    #memphistemple, #stlouis, #kc, #batonrouge {
+        display: block;
+        max-height: 600px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+    }
+
+    .card {
+        box-shadow: 2px 4px 10px 4px lightgray;
+    }
+
+    #txt {
+        max-width: 50%;
+        height: 100px;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #state {
+        max-width: 50%;
+    }
+
+    #map {
+        max-width: 75%;
+    }
+
+    #mtemple {
+        visibility: hidden;
+        max-height: 0px;
+        max-width: 0px;
+    }
+
+    #home {
+        visibility: hidden;
+        max-height: 0px;
+        max-width: 0px;
+    }
+
+    #icolumn {
+        visibility: hidden;
+        max-height: 0px;
+        max-width: 0px;
+    }
+
+    .herobutton {
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #info {
+        text-align: center;
+    }
+
+    #oneroom, #tworoom {
+        box-shadow: 2px 4px 10px 4px lightgray;
+    }
+
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+             float: right;
+             display: block;
+         }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+

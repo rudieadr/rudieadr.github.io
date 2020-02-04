@@ -1,0 +1,50 @@
+body { 
+font family: Arial; Verdana; sans-serif; Times New Roman; 
+height: 100%;
+margin: 0;
+height: 0;
+}
+@media screen and (min-width: 32.5em) {
+    header{
+        margin 0 0 0 0;
+    }
+
+    .self {
+        float: right;
+        margin: -5px;
+        padding: 20px;
+        border-radius: 50px 50px 50px 50px;
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        border-radius: 10px;
+        background-color: #000080;
+    }
+
+    #name {
+        color: white;
+        text-align: center;
+    }
+
+    #link {
+        color: #60DFE3;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    #updated {
+        text-align: center;
+    }
+
+    footer {
+        border-radius: 10px;
+        text-align: center;
+        width: 200x;
+        color: white;
+        background-color: #000080;
+    }
+}

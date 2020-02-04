@@ -1,0 +1,139 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        background-color: #7c7ab0;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 5px 10px;
+    }
+
+    #logo {
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    h3 {
+        text-align: center;
+        justify-content: center;
+        margin: 0 0 5px 0;
+    }
+
+    #flex-container {
+        display: block;
+        background-color: #7c7ab0;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #flex-container ul {
+        display: inline-flex;
+        flex: 1 1 100%;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
+
+    #flex-container ul li {
+        display: table-row;
+        padding: 0;
+    }
+
+    #flex-container ul li:hover {
+        background-color: #106910;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 0 auto;
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .herodiv {
+        margin: 10px 0 0 0;
+    }
+
+    main {
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+
+    body {
+        font-size: 24px;
+        font-family: "PT Sans", sans-serif;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: .25px;
+        color: #1edc00;
+        text-shadow: 2px 2px 2px #106910;
+        background-color: #7c7ab0;
+        padding-bottom: .25px;
+        vertical-align: center;
+        width: 100%;
+    }
+
+    a {
+        color: black;
+        text-shadow: 2px 2px 2px #106910;
+        padding: 15px;
+    }
+
+    .contactinfo {
+        visibility: visible;
+    }
+    .contactinfo img map {
+        width: 50%;
+
+    .card {
+        background-color: grey;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: .3rem;
+        box-shadow: 0 0 5px 0;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card section {
+        background-color: darkgrey;
+        border: 1px solid black;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card section img {
+
+        max-width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 0 15px;
+        float: right;
+    }
+}

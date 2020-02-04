@@ -1,0 +1,139 @@
+header {
+background-color: #7c7ab0;
+width: 100%;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 10px;
+}
+#logo {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    justify-content: center;
+    text-align: center;
+    margin: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h3 {
+    text-align: center;
+    justify-content: center;
+    margin: 0px px 5px 0px;
+}
+#flex-container {
+    display: block;
+    background-color: #7c7ab0;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+#flex-container ul {
+    display: inline-flex;
+    flex: 1 1 100%;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+#flex-container ul li{
+    display: table-row;
+    padding: 0px;
+}
+#flex-container ul li:hover {
+    background-color: #106910;
+    }
+li {
+    list-style-type: none;
+    margin: 0px 0px auto;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+#contentbox {
+    margin: 0 0 0 0;
+}
+#contentbox content row #Prestondwntwn {
+    position: relative;
+    margin: 0;
+}
+main {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+.summary{
+    position: absolute;
+    top: 13rem;
+    left: 250px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 20px #100;
+    opacity: .9;
+}
+h2 {
+    text-align: center;
+}
+body (
+font-size: 24px;
+font-family: 'PT Sans', sans-serif;
+)
+footer {
+align-content: center;
+padding-top: .25px; 
+color: #1edc00;
+text-shadow: 2px 2px 2px #106910;
+background-color: #7c7ab0;
+padding-bottom: .25px; 
+vertical-align: center;
+width: 100%; 
+}
+
+a{
+color: black;
+text-shadow: 2px 2px 2px #106910;
+padding: 15px;
+}
+table, td {
+    border: 1px solid black;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+}
+.forecast-col{
+    justify-items: center;
+    align-content: center;
+    visibility: visible;
+
+}
+.cats {
+     float: right;
+}
+#forecast-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: lightgray;
+    align-content: center;
+    visibility: visible;
+}
+.article{
+    align-content: center;
+}
+.contactinfo {
+    visibility: visible;
+}

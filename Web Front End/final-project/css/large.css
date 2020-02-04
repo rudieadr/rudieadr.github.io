@@ -1,0 +1,239 @@
+@media only screen and (min-width: 60em) {
+
+    body {
+        background-color: #F8F8F8;
+        font-family: 'Lato', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 0;
+        max-width: 75%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #rflex-box {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 4px 4px 4px lightgray;
+    }
+
+    #headitem {
+        margin-top: 20px;
+        margin-left: 0;
+        right: 0;
+        width: 100%;
+        min-height: 100px;
+        background-color: #AFB9c8;
+        box-shadow: 2px 4px 10px 4px lightgray;
+    }
+
+    #templepic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    #icon {
+        max-height: 1.5em;
+    }
+
+    #hero {
+        display: block;
+        float: right;
+    }
+
+    #mtemple {
+        background-color: white;
+        padding: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        min-height: 50px;
+        background-color: #47525e;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    #two {
+        visibility: visible;
+        max-height: 400px;
+        line-height: 1em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column {
+        visibility: visible;
+        max-height: 400px;
+        flex: 50%;
+        margin: 0 auto;
+        float: right;
+    }
+
+    .row {
+        flex: 50%;
+    }
+
+    #rflex-box {
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .rcolumn {
+        visibility: visible;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .rrow {
+        flex: 100%;
+        text-align: left;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    #state {
+        margin-right: 15px;
+    }
+
+    #longtermone {
+        max-width: 75%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    #longtermtwo {
+        max-width: 75%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #oneroom, #tworoom {
+        box-shadow: 2px 4px 10px 4px lightgray;
+}
+
+    #reception {
+        max-width: 75%;
+        display: block;
+        max-height: 600px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reservationinfo {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    #fbicon, #twicon, #piicon {
+        max-height: 20px;
+        padding: 5px;
+    }
+
+    #mainnav #topnav {
+        position: absolute;
+        border: none;
+        background: rgba(209, 213, 216, 0.15);
+        font-weight: bold;
+    }
+
+    #mainnav {
+        margin-top: -1em;
+        z-index: 15;
+        background-color: #FFF;
+    }
+
+    #map {
+        max-width: 75%;
+    }
+
+    #memphistemple, #stlouis, #kc, #batonrouge {
+        display: block;
+        max-height: 600px;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+    }
+
+    .card {
+        box-shadow: 2px 4px 10px 4px lightgray;
+    }
+
+    #txt {
+        width: 15rem;
+        height: auto;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #mtemple {
+        visibility: visible;
+
+    }
+
+    #home {
+        visibility: visible;
+    }
+
+    #icolumn {
+        visibility: visible;
+        padding: 20px;
+    }
+
+    .herobutton {
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .topnav .icon {
+        display: none;
+    }
+
+}

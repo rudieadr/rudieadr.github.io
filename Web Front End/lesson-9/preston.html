@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel='shortcut icon' href='images/favicon.ico'>
+        <meta name="author" content="Amanda Rudie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="content" content="ARudie - Web FrontEnd Development CIT 230 - week 6">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <title>Preston Town Page</title>
+
+</head>
+
+<body>
+        <span id="msg">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</span>
+<header>
+        <section>
+                <h2><img src="images/logo.png" class="logo" alt="missing logo">Fast Weather Lookup</h2>
+        </section>
+        <section>
+                <h3>www.fastweatherlookup.com</h3>
+        </section>
+</header>
+
+<main>
+                <div id="flex-container">
+                        <ul>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="preston.html">Preston</a></li>
+                                <li><a href="Home.html">Soda Springs</a></li>
+                                <li><a href="Home.html">Fish Haven</a></li>
+                                <li><a href="stormcenter.html">Storm Center</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                </div>
+        <span> </span>
+        <p></p>
+        <h1>Preston Idaho</h1>
+        <span> </span>
+                 <div class="herodiv">
+                 <picture>
+                         <source media="(min-width: 60em)" srcset="images/cit230_image_franklinOriginallarge.jpg">
+                         <source media="(min-width: 37.5em)" srcset="images/cit230_image_franklinOriginalmedium.jpg">
+                         <img src="images/cit230_image_franklinOriginalsmall.jpg" alt="image missing" id="hero-image">
+
+                 </picture>
+
+                        <div class="summary">
+                                <p>Weather Summary</p>
+                                <p>Currently: Rainy</p>
+                                <p>High: <span id="temp">48</span></p>
+                                <p>Wind Chill: <span id="outputtf"></span> F</p>
+                                <p>Humidity: 55%</p>
+                                <p>Wind Speed: <span id="windspd">5</span> F</p>
+                        </div>
+                </div>
+                <div class="forecast-row">
+                        <div class="forecast-col">
+                                <h3>5 Day Forecast</h3>
+                                <table>
+                                <thead>
+                                <tr>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                </tr>
+                                <tr>
+                                        <td><img src="images/snowy.png" alt="not here">
+                                        </td>
+                                        <td><img src="images/Sunny.png" alt="not here">
+                                        </td>
+                                        <td><img src="images/Sunny.png" alt="not here">
+                                        </td>
+                                        <td><img src="images/Sunny.png" alt="not here">
+                                        </td>
+                                        <td><img src="images/Sunny.png" alt="not here">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>High 49 Low 30</td>
+                                        <td>High 55 Low 31</td>
+                                        <td>High 49 Low 23</td>
+                                        <td>High 49 Low 26</td>
+                                        <td>High 54 Low 28</td>
+                                </tr>
+                                </thead>
+                                </table>
+                        </div>
+                        </div>
+
+                <article class="article">
+                <img src="images/cats.png" alt="cats" class="cats">
+
+                <h3>Cats Galore</h3>
+                <p> By Ze Old Cat Lady</p>
+                        <p>LOCAL NEWS: A Cat Extravaganza is taking place in Preston this weekend.
+
+<p>Cats Protection Preston Branch is holding its annual event at St Leonard’s Church Hall in Marshall’s Brow, Penwortham.
+<p>The Extravaganza will include a raffle draw, tombola, ID disc engraving and refreshments.
+
+<p>Stalls will be selling new cat-themed gifts and housewares, donated goods, crafts and toiletries. Also available will be Cats Protection Christmas cards, plus 2020 diaries and calendars.
+
+<p>Judging of the annual pet photography competition will take place, and there will be the chance to find out more about volunteering for Cats Protection Preston Branch.
+
+
+                </article>
+                <div class="contactinfo">
+
+                <h4>Fast Weather Lookup</h4>
+                <p>30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <p>        </p>
+                <p> 999.999.9999</p>
+                <p>www.fastweatherlookup.com</p>
+                        <p></p>
+                <span><img src="images/fb.png" alt="Facebook"></span>
+                <span><img src="images/pinterest.png" alt="Pinterest"></span>
+                <span><img src="images/twitter.png" alt="Twitter"></span>
+                <span><img src="images/viber.png" alt="Viber"></span>
+
+                </div>
+        </main>
+<footer>
+        <div>
+                <span>&copy; FastWeatherLookup || Amanda Rudie </span><span>|| Missouri || </span><span id="datex"> || </span><span> || <a href="https://rudieadr.github.io">Home-Rudieadr </a></span></div>
+</footer>
+<script src='js/date.js'></script>
+<script src='js/friday.js'></script>
+<script src="js/windchill.js"></script>
+</body>
+
+</html>

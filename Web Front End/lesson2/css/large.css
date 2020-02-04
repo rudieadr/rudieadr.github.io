@@ -1,0 +1,34 @@
+body { 
+font-family: 'Courier-Sans'; 
+font-size: 1.2rem;
+margin: 0;
+height: 0;
+}
+self {
+align-content: right;
+}
+
+.grid-container {
+display: inline-grid; 
+grid-gap: 5px; 
+grid-template-columns: auto auto auto;
+-ms-layout-grid-line: auto;
+padding: 0;
+margin: 5px 0 5px 0;
+}
+.grid-item {
+border: 1px;
+font-size: 15px; 
+line-height: 1em;
+text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .grid-item {
+    flex: 50%;
+    max-width: 50%;
+    }
+@media screen and (max-width: 600px) {
+    .grid-item {
+    flex: 100%;
+    max-width: 100%;   
+
